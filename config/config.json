@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "shaswath123",
+    "database": "baby_names_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "shaswath123",
+    "database": "baby_names_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "shaswath123",
+    "database": "baby_names_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
