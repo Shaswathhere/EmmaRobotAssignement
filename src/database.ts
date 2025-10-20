@@ -20,7 +20,7 @@ const sequelize = new Sequelize(
 const BabyName = sequelize.define('BabyName', {
   Name: { type: DataTypes.STRING, allowNull: false },
   Sex: { type: DataTypes.STRING, allowNull: false }
-}, {});
+}, {timestamps: false});
 
 export async function processCsvAndStore(zipFilePath: string): Promise<BabyNameRecord[]> {
   console.log('🔄 Unzipping file and processing CSV data...');

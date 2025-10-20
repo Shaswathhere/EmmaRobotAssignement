@@ -10,7 +10,7 @@ export async function downloadKaggleCsv(): Promise<string> {
     throw new Error('Kaggle email or password not found in .env file.');
   }
 
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({ acceptDownloads: true });
   const page = await context.newPage();
 
